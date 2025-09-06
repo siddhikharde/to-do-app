@@ -15,9 +15,11 @@ body{
     background-color: #CDF5FD;
 }
 .container{
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+    max-width: 700px; ;
+    height: 500px;
+    overflow-y: auto;
+    margin: 20px auto;
+    padding: 30px;
     background-color: #A0E9FF;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -52,10 +54,12 @@ body{
     left: 0;
     right: 0;
     background-color: #CDF5FD;
+    padding: 20px;
+  
    
 }
 .task-input{
-    width: 300px;
+    width: 500px;
     padding: 10px 20px;
     border: 2px solid #00A9FF;
     border-radius: 5px;

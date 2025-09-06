@@ -15,27 +15,42 @@
     </div>
     <div class="input-container">
         <input type="text" placeholder="Add a new task" class="task-input" id="taskInput">
-        <button class="add-button">Add</button>
+        <button class="add-button" onclick="addToDo()">Add</button>
     </div>
 
     <script>
 
-        const todoItems =["do study","do gym","go shopping","finish project"];
+        let todoItems =[];
 
         const loadCards = ()=>{
+            todoItemsFromStorage = JSON.parse(localStorage.getItem("todoItems") || "[]");
+            todoItems=todoItemsFromStorage;
             const todoContainer = document.getElementById("todoContainer");
+            todoContainer.innerHTML="";
             for(const todoItem of todoItems){
-                todoContainer.innerHTML +=`
+                    todoContainer.innerHTML +=`
                 <div class="task-items">
                     ${todoItem}
-                    <img src="delete.png" alt="" class="delete-icon">
+                    <img src="delete.png" alt="" class="delete-icon" onclick="deleteToDo('${todoItem}')">
                     </div>
                 `
             }
         };
          loadCards();
-         const input=document.getElementById("taskInput");
-         inputValue=input.value;
+         const addToDo = ()=>{
+           const taskInput = document.getElementById("taskInput");
+           const newTodo= taskInput.value;
+          
+            todoItems.push(newTodo);
+            taskInput.value="";
+            localStorage.setItem("todoItems",JSON.stringify(todoItems));
+            loadCards();
+           
+
+         };
+
+         
+     
     </script>
 </body>
 
