@@ -30,6 +30,7 @@ body{
     padding: 15px 20px;
     border-radius: 5px;
      border-bottom: 2px solid #00A9FF;
+     border-left: 1px solid #00A9FF;
     margin: 10px 0;
     display: flex;
     justify-content: space-between; 
