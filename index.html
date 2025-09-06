@@ -10,21 +10,27 @@
 
 <body>
     <h1>TO DO APP</h1>
-    <div class="container">
-        <div class="task-items">hello
-            <img src="delete.png" alt="" class="delete-icon">
-        </div>
-        <div class="task-items">do gym
-            <img src="delete.png" alt="" class="delete-icon">
-        </div>
-        <div class="task-items">go shopping
-            <img src="delete.png" alt="" class="delete-icon" >
-        </div>
-        <div class="task-items">finish project
-            <img src="delete.png" alt="" class="delete-icon">
-        </div>
+    <div class="container" id="todoContainer">
 
     </div>
+
+    <script>
+
+        const todoItems =["do study","do gym","go shopping","finish project"];
+
+        const loadCards = ()=>{
+            const todoContainer = document.getElementById("todoContainer");
+            for(const todoItem of todoItems){
+                todoContainer.innerHTML +=`
+                <div class="task-items">
+                    ${todoItem}
+                    <img src="delete.png" alt="" class="delete-icon">
+                    </div>
+                `
+            }
+        };
+         loadCards();
+    </script>
 </body>
 
 </html>
