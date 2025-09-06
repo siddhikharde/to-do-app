@@ -12,11 +12,11 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #CDF5FD;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
 }
 .container{
     max-width: 700px; ;
-    height: 500px;
+    height: 450px;
     overflow-y: auto;
     margin: 20px auto;
     padding: 30px;
@@ -25,10 +25,11 @@ body{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 .task-items{
-    background-color: #00A9FF;
-    color: black;
+    background-color: white;
+    color: #333;
     padding: 15px 20px;
     border-radius: 5px;
+     border-bottom: 2px solid #00A9FF;
     margin: 10px 0;
     display: flex;
     justify-content: space-between; 
@@ -62,6 +63,7 @@ body{
     width: 500px;
     padding: 10px 20px;
     border: 2px solid #00A9FF;
+   
     border-radius: 5px;
     font-size: 16px;
     outline: none;
@@ -69,11 +71,26 @@ body{
 .add-button{
     padding: 10px 20px;
     margin-left: 10px;
-    background-color: #00A9FF;
+    background-color:#00A9FF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: 400px;
+        padding: 20px;
+    }
+    .task-input {
+        width: 70%;
+        font-size: 14px;
+    }
+    .add-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
 }
