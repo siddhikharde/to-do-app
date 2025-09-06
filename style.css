@@ -1,0 +1,37 @@
+h1{
+  color: #00A9FF;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+}
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #CDF5FD;
+}
+.task-items{
+    background-color: #00A9FF;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+.delete-icon{
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+.delete-icon:hover{
+    transform: scale(1.1);
+}
