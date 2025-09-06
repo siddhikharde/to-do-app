@@ -40,12 +40,12 @@
          const addToDo = ()=>{
            const taskInput = document.getElementById("taskInput");
            const newTodo= taskInput.value;
-          
+          if(newTodo.trim()!=""){
             todoItems.push(newTodo);
             taskInput.value="";
             localStorage.setItem("todoItems",JSON.stringify(todoItems));
             loadCards();
-           
+           }
 
          };
 
