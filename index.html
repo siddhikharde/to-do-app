@@ -49,7 +49,15 @@
 
          };
 
-         
+          const deleteToDo = (task)=>{
+            const index = todoItems.indexOf(task);
+            if(index>-1){
+                todoItems.splice(index,1);
+            localStorage.setItem("todoItems",JSON.stringify(todoItems));
+            loadCards();
+            }
+            
+          };
      
     </script>
 </body>
