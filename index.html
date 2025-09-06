@@ -13,6 +13,10 @@
     <div class="container" id="todoContainer">
 
     </div>
+    <div class="input-container">
+        <input type="text" placeholder="Add a new task" class="task-input" id="taskInput">
+        <button class="add-button">Add</button>
+    </div>
 
     <script>
 
@@ -30,6 +34,8 @@
             }
         };
          loadCards();
+         const input=document.getElementById("taskInput");
+         inputValue=input.value;
     </script>
 </body>
 

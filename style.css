@@ -14,6 +14,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #CDF5FD;
 }
+.container{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #A0E9FF;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
 .task-items{
     background-color: #00A9FF;
     color: black;
@@ -34,4 +42,34 @@ body{
 }
 .delete-icon:hover{
     transform: scale(1.1);
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #CDF5FD;
+   
+}
+.task-input{
+    width: 300px;
+    padding: 10px 20px;
+    border: 2px solid #00A9FF;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+.add-button{
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #00A9FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
 }
